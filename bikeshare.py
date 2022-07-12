@@ -22,19 +22,19 @@ def get_filters():
     print('Hello There! Let\'s see what the US bikeshare data as to show you!')
 
     # asks to choose a city name
-    print('Chose a city: Chicago, New York City or Washington')
+    print('Choose a city: Chicago, New York City or Washington')
     city = input('Enter the city name: ').lower()
     while city not in CITY_DATA:
         city = input('Enter the city name: ').lower()
 
     # asks to choose a month
-    print('Chose a month: January, February, March, April, May, June or All')
+    print('Choose a month: January, February, March, April, May, June or All')
     month = input('Enter a month: ').lower()
     while month not in MONTH_DATA:
         month = input('Enter a month: ').lower()
 
     # asks to choose a day of the week
-    print('Chose a day: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
+    print('Choose a day: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
     day = input('Enter the day : ').capitalize()
     while day not in DAY_DATA:
         day = input('Enter a Day: ').capitalize()
@@ -235,12 +235,10 @@ def main():
 
         raw_data = input('\nWould you like to see raw data? Enter yes or no.\n')
         if raw_data.lower() == 'yes':
-            row_begin = 0
-            row_end = 5
+
             while True:
-                print(df[row_begin:row_end])
-                row_begin += 5
-                row_end += 5
+                print(tabulate(df_default.iloc[np.arange(0+i,5+i)], headers ="keys"))
+                i += 5
                 more_rows = input('\nDisplay 5 more rows? Enter yes or no: \n')
                 if more_rows.lower() != 'yes':
                     break
