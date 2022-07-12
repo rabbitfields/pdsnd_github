@@ -22,19 +22,19 @@ def get_filters():
     print('Hi! Let\'s see what the US bikeshare data as to show you!')
 
     # asks to choose a city name
-    print('Chose a city: Chicago, New York City or Washington')
+    print('Choose a city: Chicago, New York City or Washington')
     city = input('Enter the city name: ').lower()
     while city not in CITY_DATA:
         city = input('Enter the city name: ').lower()
 
     # asks to choose a month
-    print('Chose a month: January, February, March, April, May, June or All')
+    print('Choose a month: January, February, March, April, May, June or All')
     month = input('Enter a month: ').lower()
     while month not in MONTH_DATA:
         month = input('Enter a month: ').lower()
 
     # asks to choose a day of the week
-    print('Chose a day: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
+    print('Choose a day: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
     day = input('Enter the day : ').capitalize()
     while day not in DAY_DATA:
         day = input('Enter a Day: ').capitalize()
