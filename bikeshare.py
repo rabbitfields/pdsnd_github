@@ -19,7 +19,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hi There! Let\'s see what the US bikeshare data as to show you!')
+    print('Hello There! Let\'s see what the US bikeshare data as to show you!')
 
     # asks to choose a city name
     print('Chose a city: Chicago, New York City or Washington')
