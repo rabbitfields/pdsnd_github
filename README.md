@@ -4,7 +4,7 @@
 project created in 05/07/2022. README file created in 11/07/2022
 
 ### Project Title
-bikeshhare
+bikeshare
 
 ### Description
 It shows statistical information about the bikeshare service available in Washington, New York City and Chicago.
