@@ -235,12 +235,10 @@ def main():
 
         raw_data = input('\nWould you like to see raw data? Enter yes or no.\n')
         if raw_data.lower() == 'yes':
-            row_begin = 0
-            row_end = 5
+
             while True:
-                print(df[row_begin:row_end])
-                row_begin += 5
-                row_end += 5
+                print(tabulate(df_default.iloc[np.arange(0+i,5+i)], headers ="keys"))
+                i += 5
                 more_rows = input('\nDisplay 5 more rows? Enter yes or no: \n')
                 if more_rows.lower() != 'yes':
                     break
